@@ -26,5 +26,17 @@ namespace PixisAirTeamProject
         {
             Application.Exit();
         }
+
+        private void jobFormButton_Click(object sender, EventArgs e)
+        {
+            JobForm jobForm = new JobForm();
+            jobForm.ShowDialog();
+        }
+
+        private void jobFormToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            JobForm jobForm = new JobForm();
+            jobForm.ShowDialog();
+        }
     }
 }

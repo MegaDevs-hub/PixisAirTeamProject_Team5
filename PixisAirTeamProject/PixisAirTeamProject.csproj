@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="JobForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobForm.Designer.cs">
+      <DependentUpon>JobForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PixisAirMain.cs">
       <SubType>Form</SubType>
     </Compile>

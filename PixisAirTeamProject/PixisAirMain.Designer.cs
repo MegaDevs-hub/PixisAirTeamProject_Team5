@@ -35,6 +35,7 @@
             this.employeeFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jobFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flightFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeFormButton = new System.Windows.Forms.Button();
             this.jobFormButton = new System.Windows.Forms.Button();
             this.flightFormButton = new System.Windows.Forms.Button();
@@ -43,7 +44,6 @@
             this.orangeAccentLabel = new System.Windows.Forms.Label();
             this.pinkAccentLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.paperPlanePictureBox)).BeginInit();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +96,7 @@
             this.jobFormToolStripMenuItem.Name = "jobFormToolStripMenuItem";
             this.jobFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jobFormToolStripMenuItem.Text = "Job Form";
+            this.jobFormToolStripMenuItem.Click += new System.EventHandler(this.jobFormToolStripMenuItem_Click);
             // 
             // flightFormToolStripMenuItem
             // 
@@ -104,6 +105,14 @@
             this.flightFormToolStripMenuItem.Name = "flightFormToolStripMenuItem";
             this.flightFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.flightFormToolStripMenuItem.Text = "Flight Form";
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // employeeFormButton
             // 
@@ -132,6 +141,7 @@
             this.jobFormButton.TabIndex = 3;
             this.jobFormButton.Text = "Job Form";
             this.jobFormButton.UseVisualStyleBackColor = true;
+            this.jobFormButton.Click += new System.EventHandler(this.jobFormButton_Click);
             // 
             // flightFormButton
             // 
@@ -201,14 +211,6 @@
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // PixisAirMain
             // 
