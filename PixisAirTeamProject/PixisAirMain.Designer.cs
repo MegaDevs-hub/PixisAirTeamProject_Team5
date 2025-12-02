@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PixisAirMain));
-            this.paperPlanePictureBox = new System.Windows.Forms.PictureBox();
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
+            this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jobFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.flightFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.employeeFormButton = new System.Windows.Forms.Button();
             this.jobFormButton = new System.Windows.Forms.Button();
             this.flightFormButton = new System.Windows.Forms.Button();
@@ -43,30 +43,20 @@
             this.orangeAccentLabel = new System.Windows.Forms.Label();
             this.pinkAccentLabel = new System.Windows.Forms.Label();
             this.exitButton = new System.Windows.Forms.Button();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.paperPlanePictureBox = new System.Windows.Forms.PictureBox();
+            this.menuStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paperPlanePictureBox)).BeginInit();
-            this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // paperPlanePictureBox
+            // menuStripMain
             // 
-            this.paperPlanePictureBox.Image = global::PixisAirTeamProject.Properties.Resources.PixisAirPaperPlane;
-            this.paperPlanePictureBox.Location = new System.Drawing.Point(585, 29);
-            this.paperPlanePictureBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.paperPlanePictureBox.Name = "paperPlanePictureBox";
-            this.paperPlanePictureBox.Size = new System.Drawing.Size(203, 195);
-            this.paperPlanePictureBox.TabIndex = 0;
-            this.paperPlanePictureBox.TabStop = false;
-            // 
-            // menuStrip
-            // 
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(800, 24);
-            this.menuStrip.TabIndex = 1;
-            this.menuStrip.Text = "menuStrip1";
+            this.menuStripMain.Location = new System.Drawing.Point(0, 0);
+            this.menuStripMain.Name = "menuStripMain";
+            this.menuStripMain.Size = new System.Drawing.Size(800, 24);
+            this.menuStripMain.TabIndex = 1;
+            this.menuStripMain.Text = "Main Menu";
             // 
             // menuToolStripMenuItem
             // 
@@ -104,6 +94,15 @@
             this.flightFormToolStripMenuItem.Name = "flightFormToolStripMenuItem";
             this.flightFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.flightFormToolStripMenuItem.Text = "Flight Form";
+            this.flightFormToolStripMenuItem.Click += new System.EventHandler(this.flightFormToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // employeeFormButton
             // 
@@ -146,6 +145,7 @@
             this.flightFormButton.TabIndex = 4;
             this.flightFormButton.Text = "Flight Form";
             this.flightFormButton.UseVisualStyleBackColor = true;
+            this.flightFormButton.Click += new System.EventHandler(this.flightFormButton_Click);
             // 
             // titleLabel
             // 
@@ -202,13 +202,15 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
-            // exitToolStripMenuItem
+            // paperPlanePictureBox
             // 
-            this.exitToolStripMenuItem.Font = new System.Drawing.Font("Franklin Gothic Medium", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.paperPlanePictureBox.Image = global::PixisAirTeamProject.Properties.Resources.PixisAirPaperPlane;
+            this.paperPlanePictureBox.Location = new System.Drawing.Point(585, 29);
+            this.paperPlanePictureBox.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.paperPlanePictureBox.Name = "paperPlanePictureBox";
+            this.paperPlanePictureBox.Size = new System.Drawing.Size(203, 195);
+            this.paperPlanePictureBox.TabIndex = 0;
+            this.paperPlanePictureBox.TabStop = false;
             // 
             // PixisAirMain
             // 
@@ -225,18 +227,19 @@
             this.Controls.Add(this.jobFormButton);
             this.Controls.Add(this.employeeFormButton);
             this.Controls.Add(this.paperPlanePictureBox);
-            this.Controls.Add(this.menuStrip);
+            this.Controls.Add(this.menuStripMain);
             this.Font = new System.Drawing.Font("Franklin Gothic Medium", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip;
+            this.MainMenuStrip = this.menuStripMain;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.Name = "PixisAirMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PixisAir";
+            this.menuStripMain.ResumeLayout(false);
+            this.menuStripMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paperPlanePictureBox)).EndInit();
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,7 +248,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox paperPlanePictureBox;
-        private System.Windows.Forms.MenuStrip menuStrip;
+        private System.Windows.Forms.MenuStrip menuStripMain;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem jobFormToolStripMenuItem;
