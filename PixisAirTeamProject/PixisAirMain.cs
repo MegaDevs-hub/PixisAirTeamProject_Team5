@@ -1,4 +1,10 @@
-﻿using System;
+﻿// File: PixisAirMain.cs
+// Developer: Team5 - pithchert1, RooneyA3, waupoosa1
+// Written: 12/08/25
+
+// This assignment will access data on the IBM i.  Each team will create a C# application that accesses various tables in the PixisAir Database.
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +23,26 @@ namespace PixisAirTeamProject
             InitializeComponent();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) // Exit application via the menu strip.
         {
             Application.Exit();
         }
 
-        private void exitButton_Click(object sender, EventArgs e)
+        private void exitButton_Click(object sender, EventArgs e) // Exit application via the exit button.
         {
             Application.Exit();
+        }
+
+        private void flightFormToolStripMenuItem_Click(object sender, EventArgs e) // Show the flight form via the menu strip
+        {
+            FlightForm flightForm = new FlightForm();
+            flightForm.Show();
+        }
+
+        private void flightFormButton_Click(object sender, EventArgs e) // Show the flight form via the menu strip.
+        {
+            FlightForm flightForm = new FlightForm();
+            flightForm.Show();
         }
 
         private void jobFormButton_Click(object sender, EventArgs e)
