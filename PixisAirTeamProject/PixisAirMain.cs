@@ -45,16 +45,14 @@ namespace PixisAirTeamProject
             flightForm.Show();
         }
 
-        private void jobFormButton_Click(object sender, EventArgs e)
+        private void employeeFormButton_Click(object sender, EventArgs e) //show the employee form via button
         {
-            JobForm jobForm = new JobForm();
-            jobForm.ShowDialog();
+            new EmployeeForm().Show();                  
         }
 
-        private void jobFormToolStripMenuItem_Click(object sender, EventArgs e)
+        private void employeeFormToolStripMenuItem_Click(object sender, EventArgs e) //show the employee form via menu strip 
         {
-            JobForm jobForm = new JobForm();
-            jobForm.ShowDialog();
+            new EmployeeForm().Show();
         }
     }
 }
