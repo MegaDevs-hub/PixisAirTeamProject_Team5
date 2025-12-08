@@ -87,6 +87,7 @@
             this.jobFormToolStripMenuItem.Name = "jobFormToolStripMenuItem";
             this.jobFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.jobFormToolStripMenuItem.Text = "Job Form";
+            this.jobFormToolStripMenuItem.Click += new System.EventHandler(this.jobFormToolStripMenuItem_Click);
             // 
             // flightFormToolStripMenuItem
             // 
@@ -133,6 +134,7 @@
             this.jobFormButton.TabIndex = 3;
             this.jobFormButton.Text = "Job Form";
             this.jobFormButton.UseVisualStyleBackColor = true;
+            this.jobFormButton.Click += new System.EventHandler(this.jobFormButton_Click);
             // 
             // flightFormButton
             // 
