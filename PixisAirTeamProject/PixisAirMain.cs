@@ -44,5 +44,15 @@ namespace PixisAirTeamProject
             FlightForm flightForm = new FlightForm();
             flightForm.Show();
         }
+
+        private void employeeFormButton_Click(object sender, EventArgs e) //show the employee form via button
+        {
+            new EmployeeForm().Show();                  
+        }
+
+        private void employeeFormToolStripMenuItem_Click(object sender, EventArgs e) //show the employee form via menu strip 
+        {
+            new EmployeeForm().Show();
+        }
     }
 }

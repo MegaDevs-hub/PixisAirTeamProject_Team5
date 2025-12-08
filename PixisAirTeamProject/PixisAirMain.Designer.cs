@@ -78,6 +78,7 @@
             this.employeeFormToolStripMenuItem.Name = "employeeFormToolStripMenuItem";
             this.employeeFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.employeeFormToolStripMenuItem.Text = "Employee Form";
+            this.employeeFormToolStripMenuItem.Click += new System.EventHandler(this.employeeFormToolStripMenuItem_Click);
             // 
             // jobFormToolStripMenuItem
             // 
@@ -117,6 +118,7 @@
             this.employeeFormButton.TabIndex = 2;
             this.employeeFormButton.Text = "Employee Form";
             this.employeeFormButton.UseVisualStyleBackColor = true;
+            this.employeeFormButton.Click += new System.EventHandler(this.employeeFormButton_Click);
             // 
             // jobFormButton
             // 
